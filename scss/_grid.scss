@@ -1,0 +1,94 @@
+@mixin flex-width($width){
+	max-width: $width;
+	-webkit-box-flex:0;
+	-ms-flex:0 0 $width;
+	flex:0 0 $width;
+}
+.order-1{
+	-webkit-box-ordinal-group:2;
+	-ms-flex-order:1;
+	order:1;
+}
+
+.row{
+	[class*=col-]{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+@media (min-width: 767px){
+	.col-sm-1{
+	@include flex-width(8.33%)
+}
+.col-sm-2{
+	@include flex-width(16.66%)
+}
+.col-sm-3{
+	@include flex-width(25%)
+}
+.col-sm-4{
+	@include flex-width(33.33%)
+}
+.col-sm-5{
+	@include flex-width(41.66%)
+}
+.col-sm-6{
+	@include flex-width(50%)
+}
+.col-sm-7{
+	@include flex-width(58.33%)
+}
+.col-sm-8{
+	@include flex-width(66.66%)
+}
+.col-sm-9{
+	@include flex-width(75%)
+}
+.col-sm-10{
+	@include flex-width(83.33%)
+}
+.col-sm-11{
+	@include flex-width(91.66%)
+}
+.col-sm-12{
+	@include flex-width(100%)
+}
+}
+
+.col-1{
+	@include flex-width(8.33%)
+}
+.col-2{
+	@include flex-width(16.66%)
+}
+.col-3{
+	@include flex-width(25%)
+}
+.col-4{
+	@include flex-width(33.33%)
+}
+.col-5{
+	@include flex-width(41.66%)
+}
+.col-6{
+	@include flex-width(50%)
+}
+.col-7{
+	@include flex-width(58.33%)
+}
+.col-8{
+	@include flex-width(66.66%)
+}
+.col-9{
+	@include flex-width(75%)
+}
+.col-10{
+	@include flex-width(83.33%)
+}
+.col-11{
+	@include flex-width(91.66%)
+}
+.col-12{
+	@include flex-width(100%)
+}

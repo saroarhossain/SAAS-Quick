@@ -1,0 +1,272 @@
+@import "_extend";
+@import "_grid";
+$primary-color:rgba(31,45,61,.6);
+
+
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+.text-center{ 
+	text-align: center;
+}
+.pt-3{padding-top: 30px;} .pt-4{padding-top: 40px;}
+.pt-5{padding-top: 50px;} .pt-6{padding-top: 60px;}
+.pt-8{padding-top: 80px;} .pt-10{padding-top: 100px;
+}
+
+.pb-3{padding-bottom: 30px;} .pb-4{padding-bottom: 40px;}
+.pb-5{padding-bottom: 50px;} .pb-6{padding-bottom: 60px;}
+
+.py-3{padding: 30px 0;} .py-4{padding: 40px 0;}
+.py-5{padding: 50px 0;} .py-6{padding: 60px 0;}
+.py-7{padding: 70px 0;} .py-8{padding: 80px 0;}
+.py-9{padding: 90px 0;} .py-10{padding: 100px 0;}
+.py-15{padding: 180px 0;}
+
+.px-3{padding: 0 30px ;} .px-4{padding: 0 40px;}
+.px-5{padding: 0 50px ;} .px-6{padding: 0 60px;}
+.px-7{padding: 0 70px ;} .px-8{padding: 0 80px ;}
+.px-9{padding: 0 90px ;} .px-10{padding: 0 100px ;}
+  
+.ml-3{margin-left: 30px;}  
+ p{
+ 	font-size: 16px;
+ 	color: #718096!important
+ }
+ img{
+ 	width: 100%
+ }
+h1{
+	font-size: 64px;
+}
+h3{
+	font-size: 50px;
+}
+h5{
+	font-size: 32px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+
+}
+header{}
+h3, h5{
+	color: #152c5b;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+.col-sm-3.col-2 a {
+    display: block;
+    padding: 15px;
+}
+.col-6 img {
+	width: 100%
+}
+.row{
+	@extend %flex;
+}
+
+.center{
+	@extend %center;
+}
+.align{
+	align-items: center;
+}
+li{
+		list-style: none;
+        padding: 15px;}
+
+header ul{
+	       justify-content: flex-end;
+		   align-items: center;
+
+	li{
+			list-style: none;
+	        padding: 15px;
+
+		a{
+			text-decoration: none;
+		    text-transform: capitalize;
+		    padding: 8px;
+		    display: block;
+		    color: rgba(31, 45, 61, 0.6);
+		    font-weight: 600;}
+	
+	}
+}
+.btn-custome {
+		border: 1px solid;
+	    padding: 10px 20px;
+	    text-decoration: none;
+	    color: #fff;
+	    font-size: 16px;
+	    background: #008aff;
+	    border-radius: 8px;
+	    display: inline-block;
+	    font-weight: 600;
+	}
+.btn-business span{
+	    padding-left: 15px;
+	    color: #fff !important;
+	    display: inline-block;
+}
+.btn-business{
+	padding: 13px 25px;
+    margin-right: 10px;
+    font-size: 17px;
+	}
+.btn-custome:hover{
+    color: #fff;
+    background-color: #0075d9;
+    border-color: #006ecc;
+}
+.btn-business.see{
+	background: transparent;
+    color: black;
+    border: 2px solid #888888b8;
+	}
+.btn-business.see:hover{
+	 border-color: #4dadff;
+     background-color: transparent;
+}
+.banner-section{
+	 	 padding: 5px;
+	 h1{
+	 	 text-transform: capitalize;
+	 }
+	 span{
+	 	color: #008aff;
+	 }
+	  p{
+	 	padding-top: 20px;
+   	    margin-bottom: 50px;
+	 }
+}
+.post-heading{
+	  padding: 5px;
+
+	 span{
+	    border-radius: 40px;
+        padding: 9px 15px;
+	    color: #5cc9a7;
+	    background-color: #def4ed;
+	    font-size: 80%;
+	    font-weight: 600;
+	    display: inline-block;
+	}
+	h5{
+		padding: 15px 0;
+		font-weight: 600;
+
+	}
+	p{
+		padding: 0px;
+	}
+}
+.post{
+	    padding: 60px 15px;
+	    text-align: center;
+	    box-shadow: 3px 4px 20px 10px #00000014;
+
+	img{
+		width: 68%;
+		height: 170px;
+
+	}
+	h5{
+		padding: 5px 0px;
+    	font-size: 24px;
+    	margin-top: 15px;
+
+	}
+	p{
+		padding: 5px 0;
+
+	}
+}
+.info-section{
+
+	img{
+		border: 1px solid #94949438;
+    	width: 85%;
+
+	}
+
+}
+.panel{
+	padding: 10px;
+
+	h3{
+		font-size: 28px;
+
+	}
+	p{
+		padding: 30px 0;
+	}
+
+	ul {
+
+	 li{
+		 padding: 10px 8px;
+	i{
+		border: 1px solid;
+	    padding: 10px;
+	    border-radius: 50%;
+	    height: 35px;
+	    width: 35px;
+	    display: inline-flex;
+	    justify-content: center;
+	    background: #008aff;
+	    color: #fff;
+
+	}
+}
+
+}
+}
+
+
